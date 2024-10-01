@@ -1,2 +1,3 @@
 # Kwizlextension
-Extension waarmee jij kwizl kan cheaten 
+Ik ben **niet** verantwoordelijk voor enventuele problemen met docenten.
+Graag niet de code stelen :)
