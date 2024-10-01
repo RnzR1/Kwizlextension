@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frans Woordenlijst Extensie</title>
+    
+    <!-- Fredoka Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Verwijzing naar de CSS -->
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- Video als achtergrond -->
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="night-sky.3840x2160.mp4" type="video/mp4">
+        Je browser ondersteunt deze video niet.
+    </video>
+
+    <div class="content">
+        <h1>Franse Woordenlijst</h1>
+
+        <!-- Selectievakjes voor niveau, leerjaar en hoofdstuk -->
+        <label for="niveau">Niveau:</label>
+        <select id="niveau">
+            <option value="havo">Havo</option>
+            <option value="vwo">Vwo</option>
+        </select>
+
+        <label for="leerjaar">Leerjaar:</label>
+        <select id="leerjaar">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <label for="hoofdstuk">Hoofdstuk:</label>
+        <select id="hoofdstuk">
+            <option value="1">1</option>
+        </select>
+
+        <!-- Zoekveld en knop -->
+        <label for="zoekwoord">Zoek een Frans of Nederlands woord:</label>
+        <input type="text" id="zoekwoord" placeholder="Typ een woord in...">
+        <button id="zoekBtn">Zoek</button>
+
+        <!-- Resultaten -->
+        <div id="resultaten"></div>
+    </div>
+
+    <!-- Verwijzing naar het JavaScript-bestand -->
+    <script src="popup.js"></script>
+</body>
+</html>

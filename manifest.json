@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Franse Woordenschat Extensie",
+    "description": "Zoek Franse woorden en vertalingen op basis van leerjaar en hoofdstuk.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images.png",
+        "48": "images.png",
+        "128": "images.png"
+      }
+    },
+    "permissions": [
+      "storage"
+    ]
+  }
+  
