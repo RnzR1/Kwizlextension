@@ -30,7 +30,7 @@ body {
 h1 {
     font-size: 24px;
     font-weight: 700;
-    color: #ffffff; /* Maak de tekstkleur wit */
+    color: #333; /* Maak de tekstkleur wit */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -39,7 +39,7 @@ label {
     font-weight: 500;
     display: block;
     margin: 10px 0 5px;
-    color: #ffffff; /* Maak de tekstkleur wit */
+    color: #333; /* Maak de tekstkleur wit */
 }
 
 /* Invoervelden */
@@ -48,20 +48,20 @@ input[type="text"], select {
     padding: 10px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.8); /* Achtergrondkleur voor invoervelden */
     font-size: 16px;
-    color: #333;
+    color: #000000;
 }
 
 input[type="text"]::placeholder {
-    color: #aaa;
+    color:  #000000;
 }
 
 /* Zoekknop */
 button {
-    background-color: #4a90e2;
+    background-color: #121d2b;
     color: white;
     padding: 10px 15px;
     font-size: 16px;
@@ -74,7 +74,7 @@ button {
 }
 
 button:hover {
-    background-color: #357ab8;
+    background-color: #172938;
 }
 
 /* Zoekresultaten */
@@ -93,7 +93,7 @@ button:hover {
 }
 
 #resultaten p strong {
-    color: #4a90e2;
+    color: #0b131d;
 }
 
 /* Responsief design */
@@ -117,4 +117,35 @@ button:hover {
     #resultaten p {
         font-size: 14px;
     }
+}
+#themeToggle, #debugToggle {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+#themeToggle {
+    right: 10px;
+}
+
+#debugToggle {
+    left: 10px;
+}
+
+.theme-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#lightMode {
+    background-color: white;
+    border: 2px solid black;
+}
+
+#darkMode {
+    background-color: black;
+    border: 2px solid white;
 }

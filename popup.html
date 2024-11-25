@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <!-- Video als achtergrond -->
-    <video autoplay muted loop id="backgroundVideo">
-        <source src="night-sky.3840x2160.mp4" type="video/mp4">
-        Je browser ondersteunt deze video niet.
-    </video>
+    <div class="container">
+        <div id="themeToggle">
+            <div id="lightMode" class="theme-button" title="Lichtmodus"></div>
+            <div id="darkMode" class="theme-button" title="Donkermodus"></div>
+        </div>
 
     <div class="content">
         <h1>Franse Woordenlijst</h1>
@@ -40,6 +40,8 @@
         <label for="hoofdstuk">Hoofdstuk:</label>
         <select id="hoofdstuk">
             <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
         </select>
 
         <!-- Zoekveld en knop -->
